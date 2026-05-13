@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background: #f5f5f5;
+    background: #f3fcff;
 }
 
 header {
@@ -24,17 +24,33 @@ nav a {
     text-decoration: none;
 }
 
+.to-products{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.to-products button{
+    margin: 120px auto;
+    height: 60px;
+    width: 180px;
+    font-size: 12pt;
+}
+
 .products {
     display: flex;
     gap: 20px;
-    padding: 20px;
+    padding: 1vw 15vw;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .product {
     background: white;
+    margin: 5px;
     padding: 15px;
     border-radius: 10px;
-    width: 200px;
+    width: 250px;
     text-align: center;
 }
 
@@ -55,15 +71,83 @@ button {
     padding: 10px;
     cursor: pointer;
     border-radius: 5px;
+    transition: 0.3s;
 }
 
 button:hover {
     background: #218838;
+    transform: scale(1.05);
+}
+
+.losowanko {
+    text-align: center;
+    padding: 50px;
+}
+
+.result-box {
+    width: 320px;
+    min-height: 360px;
+    margin: 20px auto;
+    background: #effff5;
+    border: 3px solid #28a745;
+    border-radius: 15px;
+    padding: 20px;
+    transition: 0.2s;
+}
+
+.result-box img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.result-box h3 {
+    margin-top: 15px;
+}
+
+.open-btn {
+    padding: 14px 28px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background: #28a745;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.open-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
 }
 
 footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     text-align: center;
     padding: 15px;
     background: #333;
     color: white;
+}
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        width: 90%;
+        max-width: 300px;
+    }
 }

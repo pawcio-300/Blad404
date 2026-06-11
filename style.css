@@ -1,11 +1,11 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background: #f3fcff;
+    background: #f4fffc;
 }
 
 header {
-    background: #333;
+    background: #353;
     color: white;
     padding: 15px;
     display: flex;
@@ -52,10 +52,15 @@ nav a {
     border-radius: 10px;
     width: 250px;
     text-align: center;
+    border: 2px solid #afd8b9;
 }
 
 .product img {
     width: 100%;
+}
+
+.product h2 {
+    height: 56px;
 }
 
 .price {
@@ -86,7 +91,7 @@ button:hover {
 
 .result-box {
     width: 320px;
-    min-height: 360px;
+    height: 430px;
     margin: 20px auto;
     background: #effff5;
     border: 3px solid #28a745;
@@ -102,6 +107,7 @@ button:hover {
 
 .result-box h3 {
     margin-top: 15px;
+    height: 44px;
 }
 
 .open-btn {
@@ -128,6 +134,65 @@ footer {
     background: #333;
     color: white;
 }
+
+.kontakt {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 30px;
+}
+
+.kontakt h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 32px;
+    color: #333;
+}
+
+.formularz-kontaktowy {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formularz-kontaktowy input,
+.formularz-kontaktowy textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+.formularz-kontaktowy input:focus,
+.formularz-kontaktowy textarea:focus {
+    outline: none;
+    border-color: #218838;
+    box-shadow: 0 0 5px rgba(0, 119, 255, 0.3);
+}
+
+.formularz-kontaktowy textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.formularz-kontaktowy button {
+    align-self: flex-start;
+    padding: 14px 30px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.formularz-kontaktowy button:hover {
+    background-color: #218838;
+}
+
+
 
 @media (max-width: 768px) {
 

@@ -35,7 +35,6 @@ async function getProducts() {
                 <h2>${product.title}</h2>
                 <p>${product.description.substring(0, 80)}...</p>
                 <span class="price">${product.price} $</span>
-                <button>Kup teraz</button>
             `;
 
             productsContainer.appendChild(productCard);
@@ -100,7 +99,7 @@ function openLootBox() {
         showProduct(finalProduct);
 
         openBtn.disabled = false;
-        openBtn.textContent = 'Otwórz box';
+        openBtn.textContent = 'Otwórz box (500$)';
 
     }, 3000);
 
